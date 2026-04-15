@@ -157,6 +157,12 @@ const Loader = ({ onComplete }) => {
           color: rgba(245,245,247,0.25);
           font-family: 'Inter', sans-serif;
         }
+        @media (max-width: 480px) {
+          .l-tag {
+            font-size: 8px;
+            letter-spacing: 0.5em;
+          }
+        }
         .l-corner {
           position: absolute;
           font-size: 9px;
@@ -210,7 +216,7 @@ const Loader = ({ onComplete }) => {
               </span>
             ))}
           </div>
-          <p ref={tagRef} className="l-tag">Developer &nbsp;·&nbsp; Designer &nbsp;·&nbsp; Video Editor</p>
+          <p ref={tagRef} className="l-tag ">Developer &nbsp;·&nbsp; Designer &nbsp;·&nbsp; Video Editor</p>
         </div>
       </div>
     </>
