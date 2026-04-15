@@ -188,7 +188,7 @@ const Contact = () => {
       const body = encodeURIComponent(
         `Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`
       );
-      window.location.href = `mailto:bonguashok86@email.com?subject=Message from ${form.name}&body=${body}`;
+      window.location.href = `mailto:srirambongu899@email.com?subject=Message from ${form.name}&body=${body}`;
       setStatus('success');
       setForm({ name: '', email: '', message: '' });
       setTimeout(animateSuccess, 50);
