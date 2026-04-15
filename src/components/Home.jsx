@@ -1,18 +1,18 @@
-import { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, MeshWobbleMaterial } from '@react-three/drei';
-import { roles } from '../../data';
+import { useState, useEffect } from "react";
+import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, MeshWobbleMaterial } from "@react-three/drei";
+import { roles } from "../../data";
 
 const Home = () => {
-  const [typedText, setTypedText] = useState('');
+  const [typedText, setTypedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
-
-
-  useEffect(() => { setIsVisible(true); }, []);
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
 
   useEffect(() => {
     const currentRole = roles[currentIndex];
@@ -23,7 +23,7 @@ const Home = () => {
       setTimeout(() => setIsDeleting(true), pauseTime);
       return;
     }
-    if (isDeleting && typedText === '') {
+    if (isDeleting && typedText === "") {
       setIsDeleting(false);
       setCurrentIndex((prev) => (prev + 1) % roles.length);
       return;
@@ -33,7 +33,7 @@ const Home = () => {
       setTypedText(
         isDeleting
           ? currentRole.substring(0, typedText.length - 1)
-          : currentRole.substring(0, typedText.length + 1)
+          : currentRole.substring(0, typedText.length + 1),
       );
     }, typingSpeed);
 
@@ -48,26 +48,48 @@ const Home = () => {
         <div className="home-glow home-glow-2" />
         <div className="home-grid" />
         {/* Floating code glyphs */}
-        <span className="code-glyph" style={{ top: '22%', left: '8%', animationDelay: '0s' }}>{'</>'}</span>
-        <span className="code-glyph" style={{ top: '35%', right: '10%', animationDelay: '1.2s' }}>{'{ }'}</span>
-        <span className="code-glyph" style={{ bottom: '25%', left: '15%', animationDelay: '2.4s' }}>{'[ ]'}</span>
-        <span className="code-glyph" style={{ top: '15%', right: '25%', animationDelay: '0.6s', fontSize: '3rem' }}>{'()'}</span>
+        <span
+          className="code-glyph"
+          style={{ top: "22%", left: "8%", animationDelay: "0s" }}
+        >
+          {"</>"}
+        </span>
+        <span
+          className="code-glyph"
+          style={{ top: "35%", right: "10%", animationDelay: "1.2s" }}
+        >
+          {"{ }"}
+        </span>
+        <span
+          className="code-glyph"
+          style={{ bottom: "25%", left: "15%", animationDelay: "2.4s" }}
+        >
+          {"[ ]"}
+        </span>
+        <span
+          className="code-glyph"
+          style={{
+            top: "15%",
+            right: "25%",
+            animationDelay: "0.6s",
+            fontSize: "3rem",
+          }}
+        >
+          {"()"}
+        </span>
       </div>
 
       <div className="home-container ">
         <div className="home-inner ">
-
           {/* ── Left: Text ── */}
-          <div className={`home-text ${isVisible ? 'visible' : ''}`}>
-
+          <div className={`home-text ${isVisible ? "visible" : ""}`}>
             <div className="home-eyebrow">
               <span className="eyebrow-dot" />
               <span>Welcome to my world</span>
             </div>
 
             <h1 className="home-heading">
-              Hi, I'm{' '}
-              <span className="home-name">Sriram</span>
+              Hi, I'm <span className="home-name">Sriram</span>
             </h1>
 
             <div className="home-role-wrap">
@@ -79,8 +101,9 @@ const Home = () => {
             </div>
 
             <p className="home-bio">
-              Crafting elegant solutions to complex problems. Turning caffeine into code 
-              and ideas into reality. Master of the digital realm, wielding keyboards like katanas.
+              Crafting elegant solutions to complex problems. Turning caffeine
+              into code and ideas into reality. Master of the digital realm,
+              wielding keyboards like katanas.
             </p>
 
             {/* Socials */}
@@ -91,7 +114,7 @@ const Home = () => {
               <a href="https://linkedin.com/in/ashok-bongu" target="_blank" rel="noopener noreferrer" className="social-btn" title="LinkedIn">
                 <Linkedin size={18} />
               </a>
-              <a href="mailto:bonguashok86@email.com" className="social-btn" title="Email">
+              <a href="mailto:srirambongu899@email.com" className="social-btn" title="Email">
                 <Mail size={18} />
               </a>
             </div> */}
@@ -103,7 +126,11 @@ const Home = () => {
               </a>
               <button
                 className="btn-cta-outline"
-                onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() =>
+                  document
+                    .getElementById("projects")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
               >
                 View Projects
               </button>
@@ -112,9 +139,9 @@ const Home = () => {
             {/* Stats row */}
             <div className="home-stats">
               {[
-                { num: '6+', label: 'Projects Built' },
-                { num: '2+', label: 'Years Coding' },
-                { num: '20+', label: 'Tech Mastered' },
+                { num: "6+", label: "Projects Built" },
+                { num: "2+", label: "Years Coding" },
+                { num: "20+", label: "Tech Mastered" },
               ].map((s) => (
                 <div key={s.label} className="stat-item">
                   <span className="stat-num">{s.num}</span>
@@ -127,8 +154,7 @@ const Home = () => {
           {/* ── Right: Avatar ── */}
           {/* Paste this inside your Hero component where the avatar goes */}
 
-          <div className={`home-avatar-wrap ${isVisible ? 'visible' : ''}`}>
-
+          <div className={`home-avatar-wrap ${isVisible ? "visible" : ""}`}>
             {/* Spinning orbit rings */}
             <div className="orbit-ring orbit-ring-1" />
             <div className="orbit-ring orbit-ring-2" />
@@ -152,14 +178,13 @@ const Home = () => {
             </div>
             <div className="float-badge badge-bot">
               <span className="badge-dot" />
-              <span className="badge-text font-mono">{'<Designing />'}</span>
+              <span className="badge-text font-mono">{"<Designing />"}</span>
             </div>
 
             {/* Accent particles */}
             <div className="particle p1" />
             <div className="particle p2" />
             <div className="particle p3" />
-
           </div>
         </div>
 
@@ -169,8 +194,6 @@ const Home = () => {
           <span>scroll</span>
         </div>
       </div>
-
-
     </section>
   );
 };

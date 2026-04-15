@@ -193,9 +193,9 @@ export const links = [
 ];
 
 export const VIDEOS = [
-  { id: 1, src: '/videos/edit1.mp4', thumb: '/videos/thumb/1.png', title: 'Short Form', label: 'After Effects', orientation: 'portrait' },
-  // { id: 3, src: '/videos/edit3.mp4', thumb: '/videos/thumb/3.png', title: 'Movie clip', label: 'Color Grade', orientation: 'landscape' },
-  { id: 4, src: '/videos/edit4.mp4', thumb: '/videos/thumb/4.png', title: 'Movie Clip', label: 'Transitions', orientation: 'landscape' },
-  { id: 2, src: '/videos/edit2.mp4', thumb: '/videos/thumb/2.png', title: 'Short Form', label: 'Premiere Pro', orientation: 'portrait' },
+  { id: 1, src: '/videos/edit1.mp4', thumb: '/thumb/1.png', title: 'Short Form', label: 'After Effects', orientation: 'portrait' },
+  // { id: 3, src: '/videos/edit3.mp4', thumb: '/thumb/3.png', title: 'Movie clip', label: 'Color Grade', orientation: 'landscape' },
+  { id: 4, src: '/videos/edit4.mp4', thumb: '/thumb/4.png', title: 'Movie Clip', label: 'Transitions', orientation: 'landscape' },
+  { id: 2, src: '/videos/edit2.mp4', thumb: '/thumb/2.png', title: 'Short Form', label: 'Premiere Pro', orientation: 'portrait' },
 
 ];
