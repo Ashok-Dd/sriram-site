@@ -192,16 +192,16 @@ export const links = [
     { icon: MessageCircle, href: "https://wa.me/9014256401", label: "WhatsApp" },
 ];
 
-// export const VIDEOS = [
-//   { id: 1, src: 'https://res.cloudinary.com/dezojp2j2/video/upload/v1776260739/edit1_s6vsoh.mp4', thumb: '/thumb/1.png', title: 'Short Form', label: 'After Effects', orientation: 'portrait' },
-//   { id: 3, src: 'https://res.cloudinary.com/dezojp2j2/video/upload/v1776262336/video_20260415_172639_edit_1_dk5520.mp4', thumb: '/thumb/3.png', title: 'Movie clip', label: 'Color Grade', orientation: 'landscape' },
-//   { id: 4, src: 'https://res.cloudinary.com/dezojp2j2/video/upload/v1776261631/edit4_1_lrtztb.mp4', thumb: '/thumb/4.png', title: 'Movie Clip', label: 'Transitions', orientation: 'landscape' },
-//   { id: 2, src: 'https://res.cloudinary.com/dezojp2j2/video/upload/v1776261061/edit2_kbmfe6.mp4', thumb: '/thumb/2.png', title: 'Short Form', label: 'Premiere Pro', orientation: 'portrait' },
-// ];
-
 export const VIDEOS = [
-  { id: 1, src: '/videos/edit1.mp4', thumb: '/thumb/1.png', title: 'Short Form', label: 'After Effects', orientation: 'portrait' },
-  { id: 3, src: '/videos/edit3.mp4', thumb: '/thumb/3.png', title: 'Movie clip', label: 'Color Grade', orientation: 'landscape' },
-  { id: 4, src: '/videos/edit4.mp4', thumb: '/thumb/4.png', title: 'Movie Clip', label: 'Transitions', orientation: 'landscape' },
-  { id: 2, src: '/videos/edit2.mp4', thumb: '/thumb/2.png', title: 'Short Form', label: 'Premiere Pro', orientation: 'portrait' },
+  { id: 1, src: 'https://res.cloudinary.com/dezojp2j2/video/upload/v1776260739/edit1_s6vsoh.mp4', thumb: '/thumb/1.png', title: 'Short Form', label: 'After Effects', orientation: 'portrait' },
+  { id: 3, src: 'https://res.cloudinary.com/dezojp2j2/video/upload/v1776262336/video_20260415_172639_edit_1_dk5520.mp4', thumb: '/thumb/3.png', title: 'Movie clip', label: 'Color Grade', orientation: 'landscape' },
+  { id: 4, src: 'https://res.cloudinary.com/dezojp2j2/video/upload/v1776261631/edit4_1_lrtztb.mp4', thumb: '/thumb/4.png', title: 'Movie Clip', label: 'Transitions', orientation: 'landscape' },
+  { id: 2, src: 'https://res.cloudinary.com/dezojp2j2/video/upload/v1776261061/edit2_kbmfe6.mp4', thumb: '/thumb/2.png', title: 'Short Form', label: 'Premiere Pro', orientation: 'portrait' },
 ];
+
+// export const VIDEOS = [
+//   { id: 1, src: '/videos/edit1.mp4', thumb: '/thumb/1.png', title: 'Short Form', label: 'After Effects', orientation: 'portrait' },
+//   { id: 3, src: '/videos/edit3.mp4', thumb: '/thumb/3.png', title: 'Movie clip', label: 'Color Grade', orientation: 'landscape' },
+//   { id: 4, src: '/videos/edit4.mp4', thumb: '/thumb/4.png', title: 'Movie Clip', label: 'Transitions', orientation: 'landscape' },
+//   { id: 2, src: '/videos/edit2.mp4', thumb: '/thumb/2.png', title: 'Short Form', label: 'Premiere Pro', orientation: 'portrait' },
+// ];
